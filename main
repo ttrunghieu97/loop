@@ -1,8 +1,0 @@
-import os
-import pickle
-
-for root, dirs, files in os.walk("/home/tth/Documents/DATA/NCKH/handpose/", topdown=True):
-	for file in files:
-		if file.endswith(".pickle"):
-			pickle = pickle.load(open(file, "rb"))
-			print(pickle)
